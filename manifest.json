@@ -1,0 +1,21 @@
+{
+  "name": "Ратибор - Боевой клуб",
+  "short_name": "Ратибор",
+  "description": "Официальное приложение боевого клуба Ратибор",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#8B0000",
+  "icons": [
+    {
+      "src": "images/title.webp",
+      "type": "image/webp",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/title.webp",
+      "type": "image/webp",
+      "sizes": "512x512"
+    }
+  ]
+}
