@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ратибор | Боевой клуб</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#8B0000">
+</head>
+<body>
+    <header class="centered-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/title.webp" alt="Ратибор" class="title-image">
+                <h1>РАТИБОР</h1>
+                <p>БОЕВОЙ КЛУБ</p>
+            </div>
+            <nav>
+                <a href="trainers.html">ТРЕНЕРЫ</a>
+                <a href="schedule.html">РАСПИСАНИЕ</a>
+                <a href="athletes.html">СПОРТСМЕНЫ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="blood-banner">
+            <img src="images/gym.jpg" alt="Боевой зал">
+            <div class="banner-overlay">
+                <h2>СТАНЬ СИЛЬНЕЕ</h2>
+                <p>Ежедневные тренировки с профессионалами</p>
+            </div>
+        </section>
+
+        <section class="about-blood">
+            <h2>О НАС</h2>
+            <div class="blood-divider"></div>
+            <p>Клуб "Ратибор" - место, где куются чемпионы. Наши залы пропитаны духом настоящих бойцов. Мы готовим к победам в ринге и за его пределами.</p>
+        </section>
+
+        <section class="blood-trainers">
+            <h2>НАШИ ТРЕНЕРЫ</h2>
+            <div class="blood-divider"></div>
+            <div class="trainers-grid">
+                <div class="blood-trainer">
+                    <img src="images/petrov.jpg" alt="Иван Петров">
+                    <h3>ИВАН ПЕТРОВ</h3>
+                    <p>Тренер по боксу</p>
+                </div>
+                <div class="blood-trainer">
+                    <img src="images/smirnov.jpg" alt="Алексей Смирнов">
+                    <h3>АЛЕКСЕЙ СМИРНОВ</h3>
+                    <p>Тренер по ММА</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="blood-location">
+            <h2>МЫ ЗДЕСЬ</h2>
+            <div class="blood-divider"></div>
+            <div class="location-card">
+                <p>г. Ессентуки, ул. Никольская, 12</p>
+                <p>Контактная информация: +89999999999</p>
+                <p>Пн-Пт: 7:00–22:00<br>Сб-Вс: 9:00–20:00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="blood-footer">
+        <p>© 2025 "РАТИБОР". ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/serviceworker.js')
+                    .then(registration => console.log('ServiceWorker зарегистрирован'))
+                    .catch(err => console.log('Ошибка регистрации ServiceWorker: ', err));
+            });
+        }
+    </script>
+</body>
+</html>
